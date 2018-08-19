@@ -1,0 +1,7 @@
+TCP,example.com,80
+UDP,example.ns.com,53
+TCP,example.com,8080
+UDP,example.com,8080
+TCP,google.com,80
+UDP,google.com,80
+TCP,google.com,8080
