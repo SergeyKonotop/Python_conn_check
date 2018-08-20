@@ -34,13 +34,13 @@ if not FILE:
     for item in range(2):
         print(result_list[item])
 else:
-    file_path = r'/home/vagrant/'
-    full_file_path = file_path + FILE
+#    file_path = r'/home/vagrant/'
+#    full_file_path = file_path + FILE
     CLOSE = False
     with open('output.csv', 'w', newline='') as output_file:
         spamwriter = csv.writer(output_file, delimiter=',')
 #                                quotechar='|', quoting=csv.QUOTE_MINIMAL)
-        with open(full_file_path, newline='') as csvfile:
+        with open(FILE, newline='') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=',')
             for row in spamreader:
                 output_str = connect_to_host(row[1], int(row[2]), row[0]).split('\n')
